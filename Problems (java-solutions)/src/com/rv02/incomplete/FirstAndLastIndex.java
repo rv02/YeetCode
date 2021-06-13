@@ -1,5 +1,4 @@
-package com.rv02;
-
+package com.rv02.incomplete;
 
 import java.util.Arrays;
 
@@ -11,8 +10,6 @@ public class FirstAndLastIndex {
         }
         int leftIndex = index - 1;
         int rightIndex = index + 1;
-        while (nums[leftIndex] == target) {
-            Arrays.
-        }
+        return new int[]{};
     }
 }
