@@ -8,7 +8,7 @@ public class MinInRotatedArray {
                 return nums[low];
             }
             int mid = (low + high) / 2;
-            if (nums[mid] > nums[low]) {
+            if (nums[mid] >= nums[low]) {
                 low = mid + 1;
             } else {
                 high = mid;
