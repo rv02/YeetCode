@@ -1,14 +1,15 @@
 # Page 120-4.2
-from typing import List, Mapping
-from binary_tree import BinaryTree, Node
-from inorder import  inorder
+from typing import List, Optional
+from binary_tree import BinaryTree
+from tree_node import Node
+from inorder import inorder
 
 
 def minimal_tree(nums: List[int]):
     return BinaryTree(make_tree(nums, 0, len(nums) - 1))
 
 
-def make_tree(arr: List[int], start: int, end: int) -> Node:
+def make_tree(arr: List[int], start: int, end: int) -> Optional[Node]:
     if start > end:
         return
     mid = (start + end) // 2
@@ -20,4 +21,3 @@ def make_tree(arr: List[int], start: int, end: int) -> Node:
 
 if __name__ == '__main__':
     print(inorder(minimal_tree([1, 5, 10, 25, 36, 45, 89]).root))
-
