@@ -19,6 +19,7 @@ class Solution(object):
         return haystack.find(needle)
 
     def strStr2(self, haystack: str, needle):
+        # rolling hash.. later
         if not needle:
             return 0
         flag = -1
